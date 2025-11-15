@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.text-orange { color: #E44D26; }
+.text-primary { color: #0d6efd } 
+.text-purple { color: #7952B3; }
+.text-red { color: #CC6699;  }
+.text-secondary { color: #6c757d; }
+.text-success { color: #198754; }
+.text-green { color: #00A65A; }
+
+
+
+#inicio {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1500x800/212529/FFFFFF?text=Fundo+Moderno+Desenvolvimento');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.profile-picture-container {
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid var(--bs-primary);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out; 
+}
+
+.profile-picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.skill-item {
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 991.98px) {
+    #inicio {
+        min-height: 60vh;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    #inicio h1 {
+        font-size: 2.5rem; 
+    }
+    #inicio .lead {
+        font-size: 1.1rem; 
+    }
+
+    .profile-picture-container {
+        width: 200px; 
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 4px;
+    }
+
+    #sobre-texto-container {
+        text-align: center;
+    }
+    
+    #sobre-texto-container p.lead, #sobre-texto-container p {
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    #sobre-texto-container .btn {
+        width: 100%;
+        max-width: 300px; 
+        margin: 5px 0 !important;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #inicio h1 {
+        font-size: 2rem;
+    }
+
+    #inicio .lead {
+        font-size: 1rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+}
